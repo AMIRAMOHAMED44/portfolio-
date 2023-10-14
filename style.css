@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.head{
+  width: 100%;
+  position: fixed;
+  z-index: 9999999;
+}
+#logo{
+  color:#00e5ff;
+  font-size:xx-large;
+  font-weight: bold;
+  font-family: 'Merienda', cursive;
+}
+#logo:hover{
+  color: rgb(189, 43, 226);
+}
+#active{
+  background-color:#00e5ff;
+  border-radius: 4px;
+  padding: 4px 6px;
+  color: white;
+}
+
+a{
+color: black;
+font-size: large;
+font-weight: bold;
+}
+a:hover{
+  color: rgb(189, 43, 226);
+}
+.main {
+  padding: 70px 200px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+  color: white;
+  
+}
+.main .data {
+  width: 60%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.main .data h2 {
+  font-size: 2em;
+  margin-top: 10px;
+}
+.main .data h3 {
+  font-size: 2.5em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.main .data .btn {
+  background-color: #00e5ff;
+  padding: 0.9375em 2.1875em;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: 0.7s ease;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+.main .data .btn:hover {
+  background-color: rgb(189, 43, 226);
+  transform: scale(1.1);
+}
+.main .data .icons a {
+  color: white;
+  font-size:3em;
+  padding-right: 30px;
+}
+.main .data .icons a:hover{
+  color: rgb(189, 43, 226);
+}
+.main .photo {
+  width: 40%;
+  padding-top: 50px;
+}
+.main .photo img {
+  width: 400px;
+  height: 500px;
+  border-radius: 90px 0px;
+  transition: 0.7s ease;
+  box-shadow: 3px 3px 8px 10px #00e5ff,-3px -3px 8px 10px #00e5ff;
+
+}
+.main .photo img:hover{
+  transform: scale(1.1);
+}
+.about-me{
+text-align: center;
+padding-top: 40px;
+position: relative;
+height: 70vh;
+
+}
+.about-me h1{
+color: #00e5ff;
+font-size: 70px;
+transition: 0.7s ease;
+
+}
+.about-me h1:hover
+{
+  color: rgb(189, 43, 226);
+  transform: scale(1.1);
+
+}
+.about-me .text{
+  background-color:black;
+  width: 50%;
+  position: absolute;
+  top: 60%;
+  color: white;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px 100px;
+  font-size: x-large;
+  border-radius: 40px 0px;
+  line-height: 50px;
+  text-transform: capitalize;
+  box-shadow: 10px 10px 8px 10px #dfe0df;
+}
+.skills{
+  background-color: #f8f9f8;
+  padding:60px;
+  border-radius: 30px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.skills h1{
+  color: #00e5ff;
+  font-size: 70px;
+  transition: 0.7s ease;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.skills h1:hover {
+  color: rgb(189, 43, 226);
+  transform: scale(1.1);
+}
+.progress-bars{
+  width: 80%;
+  height: 40px;
+  border: none;
+  outline: none;
+  position: relative;
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.fill1{
+  height: 100%;
+  width: 95%;
+  background-color: blueviolet;
+  transition: width 0.5s;
+  border-radius: 20px;
+}
+.fill2{
+  height: 100%;
+  width: 90%;
+  background-color:aqua;
+  transition: width 0.5s;
+  border-radius: 20px;
+}
+.fill3{
+  height: 100%;
+  width: 85%;
+  background-color:rgb(203, 135, 237);
+  transition: width 0.5s;
+  border-radius: 20px;
+}
+.fill4{
+  height: 100%;
+  width: 75%;
+  background-color:rgb(84, 250, 24);
+  transition: width 0.5s;
+  border-radius: 20px;
+}
+.progress-bars .value{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: x-large;
+  color: black;
+}
+#projects{
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 70px;
+  font-weight: 800;
+  color: #00e5ff;
+  transition: 0.7s ease;
+
+}
+#projects:hover{
+  color: rgb(189, 43, 226);
+  transform: scale(1.1);
+}
+.projects{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+.projects div{
+  background-color: #00e5ff;
+  height: 60vh;
+  width: 30%;
+  margin-bottom: 100px;
+  text-align: center;
+  border-radius: 20px;
+  transition: 0.7s ease;
+  box-shadow: 10px 10px 8px 10px #dfe0df;
+
+}
+.projects div:hover{
+  transform: scale(1.1);
+  
+}
+.projects div img{
+  height: 40vh;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.projects div button{
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px 0px ;
+  margin-top: 10%;
+  border: none;
+  transition: 0.7s ease;
+
+}
+.projects div button:hover{
+  background-color: rgb(189, 43, 226);
+  transform: scale(1.1);
+}
+.projects div button a{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+
+}
+#Contact{
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 70px;
+  font-weight: 800;
+  color: #00e5ff;
+  transition: 0.7s ease;
+}
+#Contact:hover{
+  color: rgb(189, 43, 226);
+  transform: scale(1.1);
+}
+.contact-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 5%;
+}
+.contact-me form{
+  background-color: #00e5ff;
+  padding: 5%;
+  border-radius: 70px 0px;
+  box-shadow: 3px 3px 8px 10px white,-3px -3px 8px 10px white;
+}
+.contact-me div{
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-me div textarea{
+  border: none;
+  outline: none;
+
+}
+.contact-me div label{
+  font-size: larger;
+  font-weight: bold;
+  color:white;
+}
+.contact-me div input{
+  width: 65%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.contact-me .submit{
+  display: flex;
+  justify-content: center;
+}
+.contact-me .submit input{
+  width: 30%;
+  background-color: white;
+  font-size: larger;
+  font-weight: bold;
+  transition: 0.7s ease;
+
+}
+.contact-me .submit input:hover
+{
+  background-color: rgb(189, 43, 226);
+  transform: scale(1.1);
+  color: white;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f8f9f8;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  padding: 20px;
+
+}
+
+
+
+
+
+
+@media (min-width:300px) and (max-width:480px){
+
+
+  #logo {
+    font-size:x-large;
+    font-weight: bold;
+  }
+  .main {
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  .main .data {
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+    padding-left: 16px;
+  }
+  .main .data .icons{
+    margin-left: 35px;
+  }
+  
+  .main .data .icons a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 40px;
+  }
+  .main .photo {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px 0px;
+    margin-bottom: 50px;
+
+  
+  }
+  .main .data h2 {
+    font-size: 1.2em;
+  }
+  .main .data h3 {
+    font-size: 1.5em;
+  }
+  .bars{
+    display: block;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .about-me{
+    padding-top: 60px;
+    position: relative;
+    height: 85vh;
+    }
+    .about-me h1{
+    font-size: 30px;
+    }
+    .about-me .text{
+      width: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 40px;
+      font-size: large;
+      line-height:30px;
+    }
+    .skills h2{
+      font-size: 20px;
+    }
+    .skills h1{
+      font-size: 30px;
+    }
+    .progress-bars{
+      width: 90%;
+      height: 30px;
+    }
+    .progress-bars .value{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: large;
+      color: black;
+    }
+    #projects{
+      font-size:30px;
+    }
+    .projects div{
+      width: 70%;
+      margin-bottom: 15%;
+    }
+    #Contact{
+      font-size: 30px;
+    }
+    .contact-me form{
+      margin: 8%;
+      padding: 4%;
+      border-radius: 30px 0px;
+    }
+    .contact-me div label{
+      font-size: 15px;
+    }
+    .contact-me div input{
+      width: 60%;
+      height: 20px;
+    }
+
+    .contact-me #messege{
+      width: 250px;
+    }
+    .contact-me .submit input{
+      font-size: 15px;
+    }
+    footer{
+      font-size: 5px;
+    }
+    
+    
+}
+
+
+
+
+
+@media (min-width:481px) and (max-width:768px){
+
+  
+  .main {
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .main .data {
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+    padding-left: 16px;
+  }
+  .main .data .icons{
+    margin-left: 35px;
+  }
+  
+  .main .data .icons a {
+    color: white;
+    font-size: 2.5em;
+    padding-right: 40px;
+  }
+  .main .photo {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main .photo img {
+    width: 300px;
+    height: 350px;
+    border-radius: 70px 0px;
+    margin-bottom: 20px;
+
+  
+  }
+  .main .data h2 {
+    font-size: 1.5em;
+  }
+  .main .data h3 {
+    font-size: 1.7em;
+  }
+  nav a {
+    font-weight: 500;
+    padding-left: 60px;
+    
+  }
+  .about-me{
+    padding-top: 60px;
+    height: 70vh;
+    }
+    .about-me h1{
+    font-size: 50px;
+
+  
+    }
+    .about-me .text{
+      width: 70%;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 20px;
+      font-size: x-large;
+      line-height:40px;
+    }
+    .skills h2{
+      font-size: 20px;
+    }
+    .skills h1{
+      font-size: 50px;
+    }
+    .progress-bars{
+      width: 90%;
+      height: 30px;
+    }
+    .progress-bars .value{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: large;
+      color: black;
+    }
+    
+
+    #projects{
+      font-size:50px;
+    }
+    .projects div{
+      width: 40%;
+      margin-bottom: 15%;
+    }
+    #Contact{
+      font-size:50px;
+    }
+    
+}
+
+
+
+
+
+
+@media (min-width:769px) and (max-width:1024px){
+  
+  .main{
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .main {
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .main .data {
+    width: 50%;
+    padding-top: 100px;
+    text-align: center;
+    padding-left: 16px;
+  }
+  .main .data .icons{
+    margin-left: 35px;
+  }
+  
+  .main .data .icons a {
+    color: white;
+    font-size: 2.5em;
+    padding-right: 40px;
+  }
+  .main .photo {
+    width: 50%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .main .photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 70px 0px;
+
+  
+  }
+  .main .data h2 {
+    font-size: 1.5em;
+  }
+  .main .data h3 {
+    font-size: 1.7em;
+  }
+  nav a {
+    font-weight: 500;
+    padding-left: 60px;
+    
+  }
+  .about-me{
+    padding-top: 60px;
+    height: 70vh;
+    }
+    .about-me h1{
+    font-size: 60px;
+    }
+    .about-me .text{
+      width: 70%;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 40px;
+      font-size: x-large;
+      line-height:40px;
+    }
+    #projects{
+      font-size:60px;
+    }
+    .projects div{
+      width: 30%;
+      margin-bottom: 15%;
+    }
+    #Contact{
+      font-size: 60px;
+    }
+}
